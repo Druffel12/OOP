@@ -89,12 +89,3 @@ void Player2::draw()
 	sfw::drawCircle(x, y, 25);
 }
 
-void Circle::update()
-{
-
-}
-
-void Circle::draw()
-{
-	
-}
