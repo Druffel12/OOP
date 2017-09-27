@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3-Inheritance", "3-Inherita
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "4-Rule of Three", "4-Rule of Three\4-Rule of Three.vcxproj", "{6BA8EA44-EC96-4ABD-9DA5-67F3FA340F99}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Target Shoot", "Target Shoot\Target Shoot.vcxproj", "{FBE045F2-CB87-4C73-888E-4779E91164E1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{6BA8EA44-EC96-4ABD-9DA5-67F3FA340F99}.Release|x64.Build.0 = Release|x64
 		{6BA8EA44-EC96-4ABD-9DA5-67F3FA340F99}.Release|x86.ActiveCfg = Release|Win32
 		{6BA8EA44-EC96-4ABD-9DA5-67F3FA340F99}.Release|x86.Build.0 = Release|Win32
+		{FBE045F2-CB87-4C73-888E-4779E91164E1}.Debug|x64.ActiveCfg = Debug|x64
+		{FBE045F2-CB87-4C73-888E-4779E91164E1}.Debug|x64.Build.0 = Debug|x64
+		{FBE045F2-CB87-4C73-888E-4779E91164E1}.Debug|x86.ActiveCfg = Debug|Win32
+		{FBE045F2-CB87-4C73-888E-4779E91164E1}.Debug|x86.Build.0 = Debug|Win32
+		{FBE045F2-CB87-4C73-888E-4779E91164E1}.Release|x64.ActiveCfg = Release|x64
+		{FBE045F2-CB87-4C73-888E-4779E91164E1}.Release|x64.Build.0 = Release|x64
+		{FBE045F2-CB87-4C73-888E-4779E91164E1}.Release|x86.ActiveCfg = Release|Win32
+		{FBE045F2-CB87-4C73-888E-4779E91164E1}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
