@@ -3,7 +3,7 @@
 #include <cstring>
 #include "sfwdraw.h"
 #include "Player.h"
-
+#include "Projectile.h"
 
 int main()
 {
@@ -18,11 +18,21 @@ int main()
 	me.x = x/2;
 	me.y = y/2;
 
+	Shot gun;
+	gun.posX = 400;
+	gun.posY = 400;
+	
+	
+
 	while (sfw::stepContext())
 	{
 		me.update();
 		me.draw();
+		gun.draw();
+		gun.update();
 	}
+
+	
 
 	while (true) {}
 
