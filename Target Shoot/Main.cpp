@@ -103,12 +103,15 @@ int main()
 				if (gun.Shell[i].enabled == true)
 					rectB.CheckCollision(gun.Shell[i]);
 			}
-
+		if (tm.score < 0)
+		{
+			exit(0);
+		}
 	}
 
-	
 
-	while (true) {}
+	sfw::termContext();
+	
 
 	return 0;
 }

@@ -29,11 +29,14 @@ void TargetLeft::CheckCollision(Projectile &p)
 	if (p.posX < 20)
 	{
 		p.enabled = false;
-		//p.LifeTime = 0;
 		score += 5;
 		std::cout << "Hit" << std::endl;
-		//disable bullet
+	}
 
+	else if (p.posX > 780 || p.posY > 780 || p.posY < 20)
+	{
+		p.enabled = false;
+		score -= 5;
 	}
 }
 
@@ -67,8 +70,13 @@ void TargetTop::CheckCollision(Projectile &p)
 		//p.LifeTime = 0;
 		score += 5;
 		std::cout << "Hit" << std::endl;
-		//disable bullet
-		
+		//disable bullet	
+	}
+
+	else if (p.posX > 780 || p.posX < 20 || p.posY < 20)
+	{
+		p.enabled = false;
+		score -= 5;
 	}
 }
 
@@ -105,7 +113,12 @@ void TargetRight::CheckCollision(Projectile &p)
 		score += 5;
 		std::cout << "Hit" << std::endl;
 		//disable bullet
+	}
 
+	else if (p.posX < 20 || p.posY > 780 || p.posY < 20)
+	{
+		p.enabled = false;
+		score -= 5;
 	}
 }
 
@@ -141,6 +154,10 @@ void TargetBottom::CheckCollision(Projectile &p)
 		score += 5;
 		std::cout << "Hit" << std::endl;
 		//disable bullet
-
+	}
+	else if (p.posX > 780 || p.posY > 780 || p.posX < 20)
+	{
+		p.enabled = false;
+		score -= 5;
 	}
 }

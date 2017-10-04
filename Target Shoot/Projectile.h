@@ -1,6 +1,5 @@
 #pragma once
 #include "Projectile.h"
-#include "Shoot.h"
 
 class Projectile
 {

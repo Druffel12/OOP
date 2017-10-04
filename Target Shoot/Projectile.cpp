@@ -13,7 +13,7 @@ void Shot::update()
 				Shell[i].enabled = true;
 				Shell[i].posX = posX + (i * 7);
 				Shell[i].posY = posY + (i * 5);
-				Shell[i].speedY = 14 + (i * 3);
+				Shell[i].speedY = 16 + (i * 3);
 				Shell[i].speedX = 0;
 				Shell[i].LifeTime = .75;
 			}
@@ -28,7 +28,7 @@ void Shot::update()
 				Shell[i].enabled = true;
 				Shell[i].posX = posX + (i * 7);
 				Shell[i].posY = posY + (i * 5);
-				Shell[i].speedY = -14 + (i * 3);
+				Shell[i].speedY = -16 + (i * 3);
 				Shell[i].speedX = 0;
 				Shell[i].LifeTime = .75;
 			}
@@ -43,7 +43,7 @@ void Shot::update()
 				Shell[i].enabled = true;
 				Shell[i].posX = posX + (i * 5);
 				Shell[i].posY = posY + (i * 7);
-				Shell[i].speedX = -14 + (i * 3);
+				Shell[i].speedX = -16 + (i * 3);
 				Shell[i].speedY = 0;
 				Shell[i].LifeTime = .75;
 			}
@@ -58,7 +58,7 @@ void Shot::update()
 				Shell[i].enabled = true;
 				Shell[i].posX = posX + (i * 5);
 				Shell[i].posY = posY + (i * 7);
-				Shell[i].speedX = 14 + (i * 3);
+				Shell[i].speedX = 16 + (i * 3);
 				Shell[i].speedY = 0;
 				Shell[i].LifeTime = .75;
 			}
