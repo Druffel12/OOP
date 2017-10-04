@@ -36,7 +36,7 @@ void TargetLeft::CheckCollision(Projectile &p)
 	else if (p.posX > 780 || p.posY > 780 || p.posY < 20)
 	{
 		p.enabled = false;
-		score -= 5;
+		score -= 10;
 	}
 }
 
@@ -76,7 +76,7 @@ void TargetTop::CheckCollision(Projectile &p)
 	else if (p.posX > 780 || p.posX < 20 || p.posY < 20)
 	{
 		p.enabled = false;
-		score -= 5;
+		score -= 10;
 	}
 }
 
@@ -118,7 +118,7 @@ void TargetRight::CheckCollision(Projectile &p)
 	else if (p.posX < 20 || p.posY > 780 || p.posY < 20)
 	{
 		p.enabled = false;
-		score -= 5;
+		score -= 10;
 	}
 }
 
@@ -158,6 +158,6 @@ void TargetBottom::CheckCollision(Projectile &p)
 	else if (p.posX > 780 || p.posY > 780 || p.posX < 20)
 	{
 		p.enabled = false;
-		score -= 5;
+		score -= 10;
 	}
 }
