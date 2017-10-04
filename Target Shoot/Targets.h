@@ -1,10 +1,13 @@
 #pragma once
 #include <string>
 #include "sfwdraw.h"
-
+#include "Projectile.h"
 class TargetLeft
 {
 public:
+
+	int score = 0;
+
 	float bottomLeftX;
 	float bottomLeftY;
 
@@ -12,14 +15,17 @@ public:
 	float topRightY;
 
 	void draw();
-	void update();
+	void CheckCollision(Projectile &p);
 
-	//bool Target = true;
+	bool Target = false;
 };
 
 class TargetTop
 {
 public:
+
+	int score = 0;
+
 	float bottomLeftX;
 	float bottomLeftY;
 
@@ -27,14 +33,17 @@ public:
 	float topRightY;
 
 	void draw();
-	void update();
+	void CheckCollision(Projectile &p);
 
-	//bool Target = true;
+	bool Target = false;
 };
 
 class TargetRight
 {
 public:
+
+	int score = 0;
+
 	float bottomLeftX;
 	float bottomLeftY;
 
@@ -42,14 +51,17 @@ public:
 	float topRightY;
 
 	void draw();
-	void update();
+	void CheckCollision(Projectile &p);
 
-	//bool Target = true;
+	bool Target = false;
 };
 
 class TargetBottom
 {
 public:
+
+	int score = 0;
+
 	float bottomLeftX;
 	float bottomLeftY;
 
@@ -57,7 +69,7 @@ public:
 	float topRightY;
 
 	void draw();
-	void update();
+	void CheckCollision(Projectile &p);
 
-	//bool Target = true;
+	bool Target = false;
 };

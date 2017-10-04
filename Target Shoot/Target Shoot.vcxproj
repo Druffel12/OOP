@@ -119,12 +119,14 @@
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Projectile.cpp" />
     <ClCompile Include="Shoot.cpp" />
+    <ClCompile Include="TargetManager.cpp" />
     <ClCompile Include="Targets.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Player.h" />
     <ClInclude Include="Projectile.h" />
     <ClInclude Include="Shoot.h" />
+    <ClInclude Include="TargetManager.h" />
     <ClInclude Include="Targets.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

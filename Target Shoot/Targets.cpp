@@ -1,98 +1,146 @@
 #include "Targets.h"
-
+#include <iostream>
 void TargetLeft::draw()
 {
-	//Bottom
-	sfw::drawLine(bottomLeftX, bottomLeftY,
-		topRightX, bottomLeftY);
+	if (Target == true)
+	{
+		sfw::drawLine(bottomLeftX, bottomLeftY,
+			topRightX, bottomLeftY);
 
-	//left
-	sfw::drawLine(bottomLeftX, bottomLeftY,
-		bottomLeftX, topRightY);
+		//left
 
-	//top
-	sfw::drawLine(bottomLeftX, topRightY,
-		topRightX, topRightY);
+		sfw::drawLine(bottomLeftX, bottomLeftY,
+			bottomLeftX, topRightY);
 
-	//right
-	sfw::drawLine(topRightX, topRightY,
-		topRightX, bottomLeftY);
+		//top
+		sfw::drawLine(bottomLeftX, topRightY,
+			topRightX, topRightY);
+
+		//right
+		sfw::drawLine(topRightX, topRightY,
+			topRightX, bottomLeftY);
+	}
 }
 
-void TargetLeft::update()
+
+
+void TargetLeft::CheckCollision(Projectile &p)
 {
-	//if()
-	//Target = false
+	if (p.posX < 20)
+	{
+		p.enabled = false;
+		//p.LifeTime = 0;
+		score += 5;
+		std::cout << "Hit" << std::endl;
+		//disable bullet
+
+	}
 }
 
 void TargetTop::draw()
 {
-	//Bottom
-	sfw::drawLine(bottomLeftX, bottomLeftY,
-		topRightX, bottomLeftY);
+	if (Target == true)
+	{
+		sfw::drawLine(bottomLeftX, bottomLeftY,
+			topRightX, bottomLeftY);
 
-	//left
-	sfw::drawLine(bottomLeftX, bottomLeftY,
-		bottomLeftX, topRightY);
+		//left
 
-	//top
-	sfw::drawLine(bottomLeftX, topRightY,
-		topRightX, topRightY);
+		sfw::drawLine(bottomLeftX, bottomLeftY,
+			bottomLeftX, topRightY);
 
-	//right
-	sfw::drawLine(topRightX, topRightY,
-		topRightX, bottomLeftY);
+		//top
+		sfw::drawLine(bottomLeftX, topRightY,
+			topRightX, topRightY);
+
+		//right
+		sfw::drawLine(topRightX, topRightY,
+			topRightX, bottomLeftY);
+	}
 }
 
-void TargetTop::update()
+void TargetTop::CheckCollision(Projectile &p)
 {
-
+	if (p.posY > 780)
+	{
+		p.enabled = false;
+		//p.LifeTime = 0;
+		score += 5;
+		std::cout << "Hit" << std::endl;
+		//disable bullet
+		
+	}
 }
+
+
 
 void TargetRight::draw()
 {
-	//Bottom
-	sfw::drawLine(bottomLeftX, bottomLeftY,
-		topRightX, bottomLeftY);
+	if (Target == true)
+	{
+		sfw::drawLine(bottomLeftX, bottomLeftY,
+			topRightX, bottomLeftY);
 
-	//left
-	sfw::drawLine(bottomLeftX, bottomLeftY,
-		bottomLeftX, topRightY);
+		//left
 
-	//top
-	sfw::drawLine(bottomLeftX, topRightY,
-		topRightX, topRightY);
+		sfw::drawLine(bottomLeftX, bottomLeftY,
+			bottomLeftX, topRightY);
 
-	//right
-	sfw::drawLine(topRightX, topRightY,
-		topRightX, bottomLeftY);
+		//top
+		sfw::drawLine(bottomLeftX, topRightY,
+			topRightX, topRightY);
+
+		//right
+		sfw::drawLine(topRightX, topRightY,
+			topRightX, bottomLeftY);
+	}
 }
 
-void TargetRight::update()
+void TargetRight::CheckCollision(Projectile &p)
 {
+	if (p.posX > 780)
+	{
+		p.enabled = false;
+		//p.LifeTime = 0;
+		score += 5;
+		std::cout << "Hit" << std::endl;
+		//disable bullet
 
+	}
 }
 
 void TargetBottom::draw()
 {
 	//Bottom
-	sfw::drawLine(bottomLeftX, bottomLeftY,
-		topRightX, bottomLeftY);
+	if (Target == true)
+	{
+		sfw::drawLine(bottomLeftX, bottomLeftY,
+			topRightX, bottomLeftY);
 
-	//left
-	sfw::drawLine(bottomLeftX, bottomLeftY,
-		bottomLeftX, topRightY);
+		//left
 
-	//top
-	sfw::drawLine(bottomLeftX, topRightY,
-		topRightX, topRightY);
+		sfw::drawLine(bottomLeftX, bottomLeftY,
+			bottomLeftX, topRightY);
 
-	//right
-	sfw::drawLine(topRightX, topRightY,
-		topRightX, bottomLeftY);
+		//top
+		sfw::drawLine(bottomLeftX, topRightY,
+			topRightX, topRightY);
+
+		//right
+		sfw::drawLine(topRightX, topRightY,
+			topRightX, bottomLeftY);
+	}
 }
 
-void TargetBottom::update()
+void TargetBottom::CheckCollision(Projectile &p)
 {
+	if (p.posY < 20)
+	{
+		p.enabled = false;
+		//p.LifeTime = 0;
+		score += 5;
+		std::cout << "Hit" << std::endl;
+		//disable bullet
 
+	}
 }
